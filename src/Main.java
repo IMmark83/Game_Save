@@ -19,15 +19,16 @@ public class Main {
         saveGame("C://Games1//savegames//game3.dat", game3);
 
         ArrayList<String> saveList = new ArrayList();
-        saveList.add("D://Games1//savegames//game1.dat");
-        saveList.add("D://Games1//savegames//game2.dat");
-        saveList.add("D://Games1//savegames//game3.dat");
+        saveList.add("C://Games1//savegames//game1.dat");
+        saveList.add("C://Games1//savegames//game2.dat");
+        saveList.add("C://Games1//savegames//game3.dat");
 
-        zipFiles("D://Games1//savegames//zip.zip", saveList);
 
-        File game1Dat = new File("D://Games1//savegames//game1.dat");
-        File game2Dat = new File("D://Games1//savegames//game2.dat");
-        File game3Dat = new File("D://Games1//savegames//game3.dat");
+        zipFiles("C://Games1//savegames//zip.zip", saveList);
+
+        File game1Dat = new File("C://Games1//savegames//game1.dat");
+        File game2Dat = new File("C://Games1//savegames//game2.dat");
+        File game3Dat = new File("C://Games1//savegames//game3.dat");
         if (game1Dat.delete()) System.out.println("Файл \"game1.dat\" удален");
         if (game2Dat.delete()) System.out.println("Файл \"game2.dat\" удален");
         if (game3Dat.delete()) System.out.println("Файл \"game3.dat\" удален");
